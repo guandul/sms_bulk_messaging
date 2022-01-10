@@ -64,6 +64,6 @@ class BulkSMS:
             except Exception:
                 traceback.print_exc()
                 with open("output/error.csv", "a") as error:
-                    error.write(",".join(row))
+                    error.write(",".join(row) + "\n")
             else:
                 print(message_formatted)

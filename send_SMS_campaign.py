@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 import bulk_sms
 
-ACCOUNT_SSID_TWILIO = "XX"
-AUTH_TOKEN_TWILIO = "YY"
-TELEPHONE_FROM = "+11234"
+ACCOUNT_SSID_TWILIO = "ACa32b39ef481f4b2bdede12fb9318485c"
+AUTH_TOKEN_TWILIO = "6e913b5bdf52f2c0c44afe398fe83804"
+TELEPHONE_FROM = "+17404818099"
 CUSTOMERS_LIST = "input/list_of_customers.csv"
 SMS_MESSAGE = "input/message.txt"
 SMS_CR_PRICE = 0.04
