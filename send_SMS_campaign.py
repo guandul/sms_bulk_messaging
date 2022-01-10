@@ -25,9 +25,9 @@ import bulk_sms
 # Unicode create larges SMSs
 # Price based con Jan, 2021 $0.04 to Costa Rica
 
-ACCOUNT_SSID_TWILIO = "ACa32b39ef481f4b2bdede12fb9318485c"
-AUTH_TOKEN_TWILIO = "6e913b5bdf52f2c0c44afe398fe83804"
-TELEPHONE_FROM = "+17404818099"
+ACCOUNT_SSID_TWILIO = "XXX"
+AUTH_TOKEN_TWILIO = "YYY"
+TELEPHONE_FROM = "+123456789"
 CUSTOMERS_LIST = "input/list_of_customers.csv"
 SMS_MESSAGE = "input/message.txt"
 SMS_CR_PRICE = 0.04
