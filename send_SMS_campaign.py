@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import bulk_sms
+import os
 
 # # sms_bulk_messaging
 # Send SMS to a list of contacts
@@ -25,9 +26,13 @@ import bulk_sms
 # Unicode create larges SMSs
 # Price based con Jan, 2021 $0.04 to Costa Rica
 
-ACCOUNT_SSID_TWILIO = "XXX"
-AUTH_TOKEN_TWILIO = "YYY"
-TELEPHONE_FROM = "+123456789"
+# ACCOUNT_SSID_TWILIO = "ACa32b39ef481f4b2bdede12fb9318485c"
+# AUTH_TOKEN_TWILIO = "10613e143211bf17643aea7dfb83e6a6"
+# TELEPHONE_FROM = "+17404818099"
+
+ACCOUNT_SSID_TWILIO = os.environ['ACCOUNT_SSID_TWILIO']
+AUTH_TOKEN_TWILIO = os.environ['AUTH_TOKEN_TWILIO']
+TELEPHONE_FROM = os.environ['TELEPHONE_FROM']
 CUSTOMERS_LIST = "input/list_of_customers.csv"
 SMS_MESSAGE = "input/message.txt"
 SMS_CR_PRICE = 0.04
@@ -52,18 +57,11 @@ if approve_text == "Y":
     if approve_list == "Y":
         print("\nList approved, ready to send.")
 
-        #Send SMS  the campaign
-        sms.send_message()
+        # Send SMS  the campaign
+        print("Send message")
+        # sms.send_message()
     else:
         print("\nList not approved.")
 
 else:
     print("\nText not approved.")
-
-
-
-
-
-
-
-

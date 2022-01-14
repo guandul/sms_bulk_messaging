@@ -32,7 +32,7 @@ class BulkSMS:
             if message_length < 160:
                 self.sms_quantity = 1
             else:
-                self.sms_quantity = round( message_length / 153 )
+                self.sms_quantity = round(message_length / 153)
 
     def send_sms(self, telephone_to, text_to_send):
         client = Client(self.account_id, self.auth_token)
